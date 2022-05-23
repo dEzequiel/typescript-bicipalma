@@ -2,7 +2,7 @@ import { Movil } from '../interfaces/movil';
 
 export class Bycicle implements Movil {
 
-    id: number ;
+    id: number;
 
     constructor(id: number ) {
         this.id = id;
@@ -10,6 +10,10 @@ export class Bycicle implements Movil {
 
     getId(): number  {
         return this.id;
+    }
+
+    toString(): string {
+        return `ID: ${this.id}`;
     }
 
 }
